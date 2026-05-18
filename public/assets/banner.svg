@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0a09"/>
+      <stop offset="45%" style="stop-color:#1a1008"/>
+      <stop offset="100%" style="stop-color:#0c0a09"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#f97316;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1200" height="180" fill="url(#bg)"/>
+
+  <!-- Glow strip -->
+  <rect width="1200" height="1" y="89" fill="url(#glow)" filter="url(#blur)"/>
+  <ellipse cx="600" cy="90" rx="320" ry="40" fill="#f97316" opacity="0.05" filter="url(#blur)"/>
+
+  <!-- Grid lines vertical -->
+  <line x1="100" y1="0" x2="100" y2="180" stroke="#f97316" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="180" stroke="#f97316" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="500" y1="0" x2="500" y2="180" stroke="#f97316" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="700" y1="0" x2="700" y2="180" stroke="#f97316" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="900" y1="0" x2="900" y2="180" stroke="#f97316" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="1100" y1="0" x2="1100" y2="180" stroke="#f97316" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Grid lines horizontal -->
+  <line x1="0" y1="60" x2="1200" y2="60" stroke="#f97316" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="120" x2="1200" y2="120" stroke="#f97316" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Left bracket decoration -->
+  <text x="60" y="102" font-family="monospace" font-size="52" fill="#f97316" opacity="0.15">{</text>
+
+  <!-- Right bracket decoration -->
+  <text x="1112" y="102" font-family="monospace" font-size="52" fill="#f97316" opacity="0.15">}</text>
+
+  <!-- Small corner dots -->
+  <circle cx="30" cy="30" r="2" fill="#f97316" opacity="0.2"/>
+  <circle cx="1170" cy="30" r="2" fill="#f97316" opacity="0.2"/>
+  <circle cx="30" cy="150" r="2" fill="#f97316" opacity="0.2"/>
+  <circle cx="1170" cy="150" r="2" fill="#f97316" opacity="0.2"/>
+
+  <!-- Main title -->
+  <text x="600" y="82" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="42" font-weight="700" fill="#f8fafc" letter-spacing="-1">MindPrint</text>
+
+  <!-- Orange accent line under title -->
+  <rect x="530" y="90" width="140" height="2" fill="#f97316" opacity="0.6" rx="1"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="118" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#78716c" letter-spacing="2">// Yazılımcının Kara Kutusu</text>
+
+  <!-- Tagline -->
+  <text x="600" y="144" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#44403c" letter-spacing="0.5">Kod değil, düşünce sürecini belgele.</text>
+
+  <!-- Version tag -->
+  <rect x="552" y="152" width="96" height="16" rx="3" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="600" y="163" text-anchor="middle" font-family="monospace" font-size="9" fill="#57534e" letter-spacing="1">v0.1 · BETA</text>
+</svg>

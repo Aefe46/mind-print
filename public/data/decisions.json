@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sample-1",
+    "title": "Neden Redux yerine Context API seçtim?",
+    "problem": "Uygulama state yönetimi için bir çözüm gerekiyordu. Redux kurulum maliyeti ve boilerplate miktarı bu proje ölçeği için fazla geldi.",
+    "decision": "React Context API + useReducer kombinasyonunu seçtim. Ekstra bağımlılık gerektirmiyor, küçük-orta projeler için yeterli güçte.",
+    "alternatives": "Redux Toolkit, Zustand, Jotai, Recoil",
+    "resources": "https://react.dev/reference/react/useContext\nDan Abramov — \"You Might Not Need Redux\" (medium.com)",
+    "tags": ["state-management", "react", "architecture"],
+    "isFavorite": false,
+    "createdAt": "2024-03-10T09:00:00.000Z",
+    "updatedAt": "2024-03-10T09:00:00.000Z"
+  },
+  {
+    "id": "sample-2",
+    "title": "API katmanında Axios değil Fetch tercih ettim",
+    "problem": "HTTP istekleri için kütüphane seçimi gerekiyordu. Projeye ekstra bağımlılık eklememek istedim.",
+    "decision": "Native Fetch API kullandım. Modern tarayıcılarda tam destek var, interceptor ihtiyacı yoktu, async/await ile okunabilirliği yeterli.",
+    "alternatives": "Axios, SWR, TanStack Query",
+    "resources": "MDN Web Docs — Fetch API\nhttps://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+    "tags": ["api", "networking", "dependency"],
+    "isFavorite": false,
+    "createdAt": "2024-03-12T14:30:00.000Z",
+    "updatedAt": "2024-03-12T14:30:00.000Z"
+  },
+  {
+    "id": "sample-3",
+    "title": "Veritabanı olarak PostgreSQL seçimi",
+    "problem": "Proje için ilişkisel veri modeli gerekiyordu. NoSQL ve ilişkisel seçenekler karşılaştırıldı.",
+    "decision": "PostgreSQL seçildi: ACID uyumlu, açık kaynak, JSON desteği güçlü, büyük topluluk. Üretim ortamı için olgunluk seviyesi yeterli.",
+    "alternatives": "MySQL, SQLite, MongoDB",
+    "resources": "PostgreSQL official docs\nhttps://www.postgresql.org/docs/",
+    "tags": ["database", "backend", "architecture"],
+    "isFavorite": false,
+    "createdAt": "2024-03-15T11:00:00.000Z",
+    "updatedAt": "2024-03-15T11:00:00.000Z"
+  },
+  {
+    "id": "sample-4",
+    "title": "CSS-in-JS yerine Tailwind CSS tercih ettim",
+    "problem": "UI stil yönetimi için bir yaklaşım seçilmesi gerekiyordu. Styled-components ve Tailwind arasında kaldım.",
+    "decision": "Tailwind CSS seçildi. Utility-first yaklaşım geliştirme hızını artırdı, custom CSS yazımını minimuma indirdi, bundle size daha küçük.",
+    "alternatives": "Styled-components, Emotion, CSS Modules, Vanilla CSS",
+    "resources": "https://tailwindcss.com/docs\nAdam Wathan — Tailwind CSS'in tasarım felsefesi (blog)",
+    "tags": ["css", "styling", "frontend"],
+    "isFavorite": true,
+    "createdAt": "2024-03-18T10:00:00.000Z",
+    "updatedAt": "2024-03-18T10:00:00.000Z"
+  },
+  {
+    "id": "sample-5",
+    "title": "React Router v6 ile HashRouter kullanımı",
+    "problem": "Statik hosting (GitHub Pages, Netlify) için SPA routing yapılandırması gerekiyordu. BrowserRouter ile 404 hatası alıyordum.",
+    "decision": "HashRouter kullandım. URL'de # işareti çirkin görünse de statik hosting'de hiçbir sunucu konfigürasyonu gerektirmiyor.",
+    "alternatives": "BrowserRouter + Nginx rewrite, MemoryRouter, Next.js",
+    "resources": "React Router v6 Docs — HashRouter\nhttps://reactrouter.com/en/main/router-components/hash-router",
+    "tags": ["routing", "react", "deployment"],
+    "isFavorite": false,
+    "createdAt": "2024-03-20T16:45:00.000Z",
+    "updatedAt": "2024-03-20T16:45:00.000Z"
+  },
+  {
+    "id": "sample-6",
+    "title": "Veri persistansı için localStorage tercih ettim",
+    "problem": "Backend olmadan kararların oturum kapanınca kaybolmaması gerekiyordu.",
+    "decision": "localStorage kullandım. Basit JSON serialization, sıfır bağımlılık, offline çalışma. IndexedDB bu ölçek için fazla karmaşık.",
+    "alternatives": "IndexedDB, sessionStorage, SQLite (Electron), Supabase",
+    "resources": "MDN — Window.localStorage\nhttps://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+    "tags": ["storage", "frontend", "offline"],
+    "isFavorite": true,
+    "createdAt": "2024-03-22T09:30:00.000Z",
+    "updatedAt": "2024-03-22T09:30:00.000Z"
+  }
+]
